@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:state_management_getx/features/home/home_screen.dart';
 
 // region App
@@ -8,7 +9,7 @@ class App extends StatelessWidget {
   // region Build
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {'/home': (context) => const HomeScreen()},
       initialRoute: '/home',
